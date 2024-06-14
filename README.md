@@ -14,5 +14,9 @@ eval "$(ssh-agent -s)"
 ```shell
 ssh-add ~/.ssh/id_ed25519 
 ```
-
+**Step 5**: copy public ssh key
+```shell
+clip < ~/.ssh/id_ed25519.pub
+```
+**Step 6**: paste this public key in your github account on https://github.com/settings/keys
 
